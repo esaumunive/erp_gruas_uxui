@@ -1,0 +1,506 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,400i,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,400i,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+@import url('../static/css/bootstrap.css');
+@import url('../static/css/animate.css');
+.scroller {
+  scrollbar-color: #f5cc20 #121212;
+}
+::-webkit-scrollbar {
+  width: 0.2em;
+}
+::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f5cc20;
+  border-radius: 22px !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:focus,
+button:focus {
+  outline: none !important;
+}
+body {
+  background: #ffffff;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  background: #eeeff4;
+}
+.GreenT {
+  color: #008643;
+}
+.YellowT {
+  color: #f5cc20;
+}
+.RedT {
+  color: #aa1d1f;
+}
+.Menu {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.2);
+  height: 65px;
+  line-height: 60px;
+  z-index: 5;
+}
+@media screen and (min-width: 991px) {
+  .Menu {
+    height: 78px;
+    line-height: 75px;
+    padding: 0 0.9em;
+  }
+}
+.Menu #MostrarHr {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .Menu #MostrarHr {
+    margin-top: 0.3em;
+    font-size: 1.0em;
+    margin-left: 0.4em;
+    color: #aaaaaa;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 1em;
+  }
+}
+.Menu .dropdown-menu {
+  top: 100% !important;
+  left: 30% !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.Menu .dropdown-menu .DropA {
+  text-align: left;
+  display: block !important;
+  padding: 0 0.9em !important;
+  text-decoration: none !important;
+  font-size: 0.9em;
+}
+.Menu .LogoNavBar {
+  text-align: left;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar {
+    text-align: center;
+  }
+}
+.Menu .LogoNavBar .DarkMode {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar .DarkMode {
+    position: relative;
+    margin-top: 0.6em;
+    margin-left: 6em;
+    display: block;
+  }
+}
+.Menu .LogoNavBar .DarkMode .tooltip {
+  font-family: 'Oswald', sans-serif;
+  top: -3em !important;
+}
+.Menu .LogoNavBar .DarkMode a {
+  color: #2b2b2b;
+}
+.Menu .LogoNavBar .DarkMode i {
+  font-size: 2.9em;
+}
+.Menu .LogoNavBar .AllMenu {
+  height: 70px;
+  border-right: none;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar .AllMenu {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: 76px;
+  }
+}
+.Menu .LogoNavBar .AllMenu i {
+  font-size: 1.8em;
+  color: #252525;
+  margin-top: 0.45em;
+  padding: -1em 0;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar .AllMenu i {
+    font-size: 2.1em;
+    padding: 0.5em 0.5em 0.5em 0em;
+    margin-top: 0em;
+    padding-left: -0.2em;
+  }
+}
+.Menu .LogoNavBar .Logotipo {
+  width: 96px;
+  margin-left: 0em;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar .Logotipo {
+    height: 70px;
+    margin-left: 0em;
+  }
+}
+.Menu .LogoNavBar .Logotipo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (min-width: 991px) {
+  .Menu .LogoNavBar .Logotipo img {
+    padding: 0.8em 0.8em 0.8em 1.8em;
+    height: 70px;
+  }
+}
+.Menu .MenuRight {
+  margin-top: -0.4em;
+}
+.Menu .MenuRight .ListRight {
+  float: right;
+  display: inline-block;
+  height: 70px;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .ListRight {
+    height: 84px;
+  }
+}
+.Menu .MenuRight .Notification {
+  position: relative;
+  margin-top: 0em;
+  margin-right: 1.8em;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .Notification {
+    margin-top: 0.5em;
+    margin-right: 0em;
+  }
+}
+.Menu .MenuRight .Notification .Bubble {
+  margin-top: 0.6em;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .Notification .Bubble {
+    margin-top: 0em;
+  }
+}
+.Menu .MenuRight .Notification .Bubble .Notif {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  z-index: 3;
+  height: 50px;
+}
+.Menu .MenuRight .Notification .Bubble .Notif span {
+  border-radius: 50%;
+  padding: 0.25em 0.9em 0.15em 0.5em;
+  width: 14px;
+  height: 15px;
+  line-height: 10px;
+  background: #e60000;
+  color: #ffffff;
+  font-size: 0.6em;
+  font-weight: 300;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .Notification .Bubble .Notif span {
+    border-radius: 50%;
+    padding: 0.25em 0.9em 0.15em 0.5em;
+    width: 14px;
+    height: 15px;
+    line-height: 10px;
+    background: #e60000;
+    color: #ffffff;
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+}
+.Menu .MenuRight .Notification .dropdown-toggle::after {
+  content: none !important;
+}
+.Menu .MenuRight .Notification .dropdown-menu {
+  width: 220px;
+  left: -281% !important;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .Notification .dropdown-menu {
+    width: 299px;
+    left: -230% !important;
+  }
+}
+.Menu .MenuRight .Notification .dropdown-menu ul li {
+  padding: 0 1em 1em 0!important;
+  font-size: 0.8em;
+  line-height: 1.1em;
+  margin: 0.9em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Menu .MenuRight .Notification .dropdown-menu ul li i {
+  font-size: 1.4em;
+}
+.Menu .MenuRight .Notification .dropdown-menu ul li a {
+  font-weight: 300;
+  padding: 1em 1.2em;
+  text-decoration: none;
+}
+.Menu .MenuRight .Notification .dropdown-menu ul li:after {
+  border-bottom: none !important;
+}
+.Menu .MenuRight .FullScreen {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .FullScreen {
+    display: block;
+  }
+}
+.Menu .MenuRight .FullScreen i {
+  margin-top: 1.41em !important;
+}
+.Menu .MenuRight .Avatar {
+  display: none;
+}
+.Menu .MenuRight .Avatar .AvatTxt,
+.Menu .MenuRight .Avatar .Img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Menu .MenuRight .Avatar .AvatTxt {
+  font-size: 0.99em;
+  line-height: 1.0em;
+  font-weight: 300;
+}
+.Menu .MenuRight .Avatar .AvatTxt span {
+  font-size: 0.8em;
+  color: #c09d09;
+}
+@media screen and (min-width: 991px) {
+  .Menu .MenuRight .Avatar {
+    display: block;
+  }
+}
+.Menu .MenuRight .dropdown-toggle {
+  position: relative;
+}
+.Menu .MenuRight a {
+  color: #444;
+  font-weight: 400;
+  text-align: right;
+}
+.Menu .MenuRight a span {
+  display: block;
+}
+.Menu .MenuRight a img {
+  border-radius: 50%;
+  padding: 0.2em;
+  height: 46px;
+}
+.Menu ul li {
+  list-style: none;
+}
+.AllSideBar {
+  position: fixed;
+  z-index: 4;
+  height: 100%;
+}
+.AllSideBar .MiniSideNav {
+  position: fixed;
+  text-align: right;
+  width: 98px;
+  background: #0c0c0c;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  height: 100%;
+  padding: 5em 5.9em 2em 0em !important;
+}
+@media screen and (min-width: 991px) {
+  .AllSideBar .MiniSideNav {
+    padding: 5em 4.9em 2em 0em !important;
+  }
+}
+.AllSideBar .MiniSideNav ul li {
+  list-style: none;
+  margin-left: -2.5em;
+}
+.AllSideBar .MiniSideNav .IconRoot {
+  width: 60px;
+  text-align: center !important;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+@media screen and (min-width: 991px) {
+  .AllSideBar .MiniSideNav .IconRoot {
+    width: 80px;
+  }
+}
+.AllSideBar .MiniSideNav .IconRoot a {
+  text-align: center !important;
+}
+.AllSideBar .MiniSideNav .IconRoot a i {
+  text-align: center !important;
+  padding: 0 0 0 0.5em;
+  margin: 0.6em 0;
+  font-size: 1.8em;
+  color: #b3b3b3;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+@media screen and (min-width: 991px) {
+  .AllSideBar .MiniSideNav .IconRoot a i {
+    font-size: 2.3em;
+    padding: 0 0 0 0.5em;
+  }
+}
+.AllSideBar .MiniSideNav .IconRoot i:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+.AllSideBar .MiniSideNav .IconRoot span {
+  padding: 0;
+  margin-top: -1.3em;
+  margin-left: 1.7em;
+  display: block;
+  font-size: 0.7em;
+  font-weight: 200;
+}
+@media screen and (min-width: 991px) {
+  .AllSideBar .MiniSideNav .IconRoot span {
+    margin-top: -1.3em;
+    margin-left: 2.0em;
+    font-size: 0.7em;
+  }
+}
+.AllSideBar .MiniSideNav .IconRoot a {
+  font-weight: 300;
+  color: #ffffff !important;
+}
+.AllSideBar .MiniSideNav .IconRoot:hover {
+  background: rgba(0, 0, 0, 0.4);
+  width: 104px;
+}
+.AllSideBar .MiniSideNav .Activ {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0.8em;
+  width: 4px;
+  height: 100%;
+  border-radius: 1em;
+  background: #f5cc20;
+}
+.AllSideBar .SideNav {
+  position: fixed;
+  width: 190px;
+  background: #111;
+  left: 98px;
+  top: 65px;
+  padding-top: 1em !important;
+  height: 100%;
+  z-index: 4;
+  overflow-y: auto;
+}
+@media screen and (min-width: 991px) {
+  .AllSideBar .SideNav {
+    padding-top: 1em !important;
+    top: 78px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1920px) {
+}
+.AllSideBar .SideNav ul li {
+  list-style: none;
+  margin: 1.6em 0;
+}
+.AllSideBar .SideNav a {
+  font-size: 0.86em;
+  font-weight: 200;
+  color: #ffffff !important;
+}
+.AllSideBar .SideNav a i {
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+.AllSideBar .SideNav a i:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+.Dash_Show {
+  margin-left: 0px !important;
+}
+.AllDashboard {
+  padding: 6.2em 2em 1em 2em !important;
+  position: relative;
+  margin-left: 290px;
+  z-index: 3;
+}
+.AllDashboard .BreadCs {
+  text-align: justify;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.AllDashboard .BreadCs h5 {
+  font-size: 1.5em;
+  color: #202020;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 0.55em;
+  margin-bottom: 0em !important;
+}
+.AllDashboard .BreadCs .breadcrumb {
+  background-color: transparent !important;
+  border-radius: 0;
+}
+.AllDashboard .BreadCs .breadcrumb li {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom: -1.2em !important;
+}
+.AllDashboard .BreadCs .breadcrumb a {
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  color: #322902;
+  font-weight: 400;
+}
+.AllDashboard .BreadCs .breadcrumb a:hover {
+  color: #e2b80a;
+}
+.AllDashboard .Dashboard {
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+.AllDashboard .Dashboard .TitleInfo {
+  background: #7f7f7f;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  margin: 2em 0 1em 0;
+  padding: 0.4em 1em;
+}
+.Picture img {
+  width: 100%;
+}
