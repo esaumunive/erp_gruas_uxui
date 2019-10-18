@@ -230,6 +230,7 @@
 							<option>PLANAS</option>
 							<option>LOWBOY</option>
 							<option>ORQUESTA</option>
+							<option>MODULARES</option>
 						</select>
 					</div>
 					<div class="col-sm-8">
@@ -243,7 +244,7 @@
 						<label for="">Marca </label>
 						<select class="form-control">
 							<option readonly>Selecciona una opción</option>
-							<option>Liebher</option>
+							<option>Liebherr</option>
 							<option>Grove</option>
 						</select>
 					</div>
@@ -289,7 +290,7 @@
 		</div>
 
 		<!-- titulo separador -->
-		<h5 class="TitleInfo">Información de adicional (Grua)</h5>
+		<h5 class="TitleInfo">Información de adicional (Grúa)</h5>
 
 		<div class="row">
 			<div class="col-sm-12">
@@ -1049,6 +1050,8 @@
 						<th>Nombre Documento</th>
 						<th>Fecha de Emision</th>
 						<th>Fecha de Vencimiento</th>
+						<th>Documento</th>
+						<th>Estatus</th>
 						<th>Acción</th>
 					</thead>
 					<tbody>
@@ -1058,7 +1061,12 @@
 							<td>Documento de prueba</td>
 							<td>14-10-2019</td>
 							<td>20-10-2019</td>
-							
+							<td class="t_center">
+								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+							</td>
+							<td class="">
+								<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
+							</td>
 							<td class="t_center">
 								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 							</td>
