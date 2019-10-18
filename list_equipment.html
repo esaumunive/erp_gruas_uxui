@@ -180,7 +180,7 @@
 	<!-- SideNav -->
 	<div class="SideNav scroller">
 		<ul>
-			<li><a href="list_equipment.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Equipos</a></li>
+			<li><a href="equipment.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevo Equipo</a></li>
 			<li><a href="list_equipment.html"><i style="vertical-align: middle;" class="material-icons">list</i> Lista de equipos</a></li>
 			<!-- <li><a href="#"><i style="vertical-align: middle;" class="material-icons">view_list</i> Listado</a></li> -->
 
@@ -981,6 +981,8 @@
 						<th>Nombre Documento</th>
 						<th>Fecha de Emision</th>
 						<th>Fecha de Vencimiento</th>
+						<th>Documento</th>
+						<th>Estatus</th>
 						<th>Acción</th>
 					</thead>
 					<tbody>
@@ -990,7 +992,12 @@
 							<td>Documento de prueba</td>
 							<td>14-10-2019</td>
 							<td>20-10-2019</td>
-							
+							<td class="t_center">
+								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+							</td>
+							<td class="">
+								<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
+							</td>
 							<td class="t_center">
 								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 							</td>
@@ -1003,7 +1010,7 @@
 
 		<div class="AllBtnsAction">
 			<div class="BtnCrear_grey">
-				<button type="submit" class="btn"><i class="material-icons" style="vertical-align: middle;">assignment</i> Cancelar</button>
+				<button type="submit" class="btn"><i class="material-icons" style="vertical-align: middle;">clear</i> Cancelar</button>
 			</div>
 			<div class="BtnCrear">
 				<button id="BtnCrear" type="submit" class="BtnCrear btn"><i class="material-icons" style="vertical-align: middle;">check_circle_outline</i> Crear equipo</button>
