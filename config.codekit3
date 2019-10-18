@@ -16,13 +16,6 @@
 		"oAP": "\/config.html",
 		"oF": 0
 		},
-	"\/equipment.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/equipment.html",
-		"oF": 0
-		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -77,13 +70,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/new_deptos.html",
-		"oF": 0
-		},
-	"\/new_enterp.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/new_enterp.html",
 		"oF": 0
 		},
 	"\/README.md": {
