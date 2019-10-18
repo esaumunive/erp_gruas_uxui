@@ -224,88 +224,68 @@
 			</div>
 			<div class="col-sm-10">
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="form-group">
-							<label for="">Nombre del equipo</label>
-							<input class="form-control" type="number" placeholder="2">
-						</div>
-					</div>
 					<div class="col-sm-4">
-						<label for="">Proyecto</label>
+						<label for="">Tipo de Equipo</label>
 						<select class="form-control">
 							<option readonly>Seleccione una opción</option>
-							<option>2 Bocas</option>
-							<option>Ventosa</option>
-							<option>Schlumberguer</option>
-							<option>Local</option>
+							<option>Transporte</option>
+							<option>GRÚAS</option>
+							<option>TITAN</option>
+							<option>TRACTOCAMIONES</option>
+							<option>PLANAS</option>
+							<option>LOWBOY</option>
+							<option>ORQUESTA</option>
 						</select>
 					</div>
-					<div class="col-md-3">
-						<label for="">Departamento/Área</label>
-						<select class="form-control">
-							<option readonly>Operaciones</option>
-							<option>Dirección</option>
-							<option>Jefatura</option>
-						</select>
-					</div>
-					<div class="col-sm-3">
-						<label for="">Encargado del área</label>
-						<select class="form-control">
-							<option readonly>Luis Espinoza</option>
-							<option>Jorge Toledo</option>
-							<option>Cynthia Villarreal</option>
-						</select>
+					<div class="col-sm-8">
+						<div class="form-group">
+							<label for="">Nombre del equipo</label>
+							<input class="form-control" type="text">
+						</div>
 					</div>
 					
 					<div class="col-sm-4">
-						<label for="">Puesto</label>
+						<label for="">Marca </label>
 						<select class="form-control">
 							<option readonly>Selecciona una opción</option>
-							<option>Maniobrista</option>
-							<option>Operador de grúa</option>
-							<option>Operador de tracto</option>
+							<option>Liebher</option>
+							<option>Grove</option>
 						</select>
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Fecha de Ingreso</label>
-							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de ingreso">
+							<label for="">Modelo</label>
+							<input class="form-control" type="text" placeholder="Modelo del Equipo">
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Fecha de Laborar</label>
-							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de ingreso a laborar">
+							<label for="">Numero de serie</label>
+							<input class="form-control" type="text" placeholder="Numero de serie">
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="">Vacante Producida por:</label>
-						<select class="form-control">
-							<option readonly>Selecciona una opción</option>
-							<option>Promoción/Ascenso</option>
-							<option>Incapacidad</option>
-							<option>Maternidad</option>
-							<option>Remplazo</option>
-							<option>Proyecto</option>
-							<option>Renuncia</option>
-							<option>Recomendación</option>
-							<option>Otro</option>
-						</select>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Año</label>
+							<input class="form-control" type="number" placeholder="Año">
+						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="">Categoría</label>
-						<select class="form-control">
-							<option readonly value="">Selecciona una opción</option>
-							<option >Base</option>
-							<option>3 Meses</option>
-							<option>Eventual</option>
-							<option>Por obra/Proyecto</option>
-						</select>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="">Placas</label>
+							<input class="form-control" type="text" placeholder="Año">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="">No Economico</label>
+							<input class="form-control" type="text" placeholder="Año">
+						</div>
 					</div>
 					<div class="col-sm-12"> <br>
 						<div class="form-group">
-							<label for="">Funciones y responsabilidades del puesto</label>
-							<textarea name="" class="form-control" type="text" placeholder="Perfil del puesto"></textarea> 
+							<label for="">Descripción del Equipo</label>
+							<textarea name="" class="form-control" type="text" placeholder="Agregar descripcion del equipo"></textarea> 
 						</div>
 					</div>
 					
@@ -313,159 +293,16 @@
 			</div>
 		</div>
 
-<!-- titulo separador -->
-		<h5 class="TitleInfo">Información Personal</h5>
+		<!-- titulo separador -->
+		<h5 class="TitleInfo">Información de adicional (Grua)</h5>
 
 		<div class="row">
-			<div class="col-sm-2 Picture">
-				<label for="">Firma</label>
-				<img src="static/images/firma.png" alt=""><br><br>
-		
-				<div class="Box t_center">		
-					<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1">
-					<label for="input-c-file-imagen" title="Firma">
-						<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-					</label>
-				</div>
-
-			</div>
-			<div class="col-sm-10">
+			<div class="col-sm-12">
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Nombre del empleado</label>
-							<input class="form-control" type="text" placeholder="Apellido Paterno">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Apellido paterno</label>
-							<input class="form-control" type="text" placeholder="Apellido paterno">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Apellido materno</label>
-							<input class="form-control" type="text" placeholder="Apellido materno">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Edad</label>
-							<input class="form-control" type="number" placeholder="Edad">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Fecha de nacimiento</label>
-							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de nacimiento">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Sexo</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Hombre</option>
-								<option>Mujer</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Nacionalidad</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Mexicana</option>
-								<option>Extranjero</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Correo electrónico</label>
-							<input class="form-control" type="email" placeholder="Correo electrónico">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Celular personal</label>
-							<input class="form-control" type="number" placeholder="Celular personal">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Teléfono(s)</label>
-							<input class="form-control" type="number" placeholder="Casa o emergencia">
-						</div>
-					</div>
-
-			<!-- subtitulo separador -->
-				<div class="col-sm-12">
-					<h5 class="SubTitleInfo">Domicilio</h5>
-				</div>
-
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Calle</label>
-							<input class="form-control" type="text" placeholder="Calle y no.">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Colonia</label>
-							<input class="form-control" type="text" placeholder="Colonia">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Código postal</label>
-							<input class="form-control" type="text" placeholder="CP.">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Municipio</label>
-							<input class="form-control" type="text" placeholder="Municipio">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Estado</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Baja California</option>
-								<option>Chiapas</option>
-								<option>Ciudad de México</option>
-								<option>Nuevo León</option>
-								<option>Oaxaca</option>
-								<option>Tabasco</option>
-								<option>Veracruz</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">País</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>México</option>
-								<option>Venezuela</option>
-								<option>Estados Unidos</option>
-								<option>Alemania</option>
-							</select>
-						</div>
-					</div>
-
-				<!-- subtitulo separador -->
-				<div class="col-sm-12">
-					<h5 class="SubTitleInfo">Información adicional</h5>
-				</div>
-					
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Acta de nacimiento</label>
-							<input class="form-control" type="text" placeholder="Acta de nacimiento">
+							<label for="">Especificaciónes</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
@@ -475,252 +312,180 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">RFC</label>
-							<input class="form-control" type="text" placeholder="RFC">
+							<label for="">Certificado Registro</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="RFC">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">CURP</label>
-							<input class="form-control" type="text" placeholder="CURP">
+							<label for="">Reporte_Inspeccion</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="CURP">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">NSS</label>
-							<input class="form-control" type="text" placeholder="NSS">
+							<label for="">Factura</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="NSS">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Curriculum Vitae</label>
-							<input class="form-control" type="text" placeholder="Curriculum Vitae" disabled>
+							<label for="">Pedimento Importación</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Curriculum">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Crédito Infonavit</label>
-							<input class="form-control" type="text" placeholder="No. de Crédito">
+							<label for="">Bitacora de mantenimiento</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4 offset-sm-4">
 						<div class="form-group">
-							<label for="">Comprobante Dom.</label>
-							<input class="form-control" type="text" placeholder="Domicilio">
+							<label for="">Checklist</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
 							<div class="Box t_center">		
 								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
+								<label for="input-c-file-imagen" title="Acta nacimiento">
 									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
 								</label>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Cartilla militar</label>
-							<input class="form-control" type="text" placeholder="No. cartilla militar">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">No. de dependientes</label>
-							<input class="form-control" type="number" placeholder="No. de dependientes">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<div class="form-group">
-							<label for="">Dependientes y % (Personas)</label>
-							<input class="form-control" type="number" placeholder="Nombre de dependientes y porcentaje">
-						</div>
-					</div> 
- 
-				<div class="col-sm-12"><br> 
-					<h5 class="">Cuenta bancaria</h5>
 				</div>
-					<div class="col-sm-12">
+			</div>
+		</div> <!-- row -->	
+		<h5 class="TitleInfo">Información de adicional (Titan)</h5>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-4">
 						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-5">
-									<label for="">No. de cuenta</label>
-									<input class="form-control" type="text" placeholder="No. de cuenta">
-								</div>
-								<div class="col-sm-5">
-									<label for="">Nombre del banco</label>
-									<select class="form-control">
-										<option readonly>Selecciona una opción</option>
-										<option>Banamex</option>
-										<option>BBVA</option>
-										<option>Banorte/IXE</option>
-										<option>Bajío</option>
-										<option>HSBC</option>
-										<option>Scotiabank</option>
-										<option>Santander</option>
-										<option>Coppel</option>
-										<option>Famsa</option>
-									</select>
-								</div>
+							<label for="">Especificaciónes</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
 
-								<div class="col-sm-2">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
 							</div>
-							
 						</div>
-					</div><!-- licencia -->
-
-				<div class="col-sm-12">
-					<h5 class="">INE/IFE</h5>
-				</div>
-
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. de INE</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div><!-- licencia -->
-
-				
-				<div class="col-sm-12">
-					<h5 class="">Licencia para conducir</h5>
-				</div>
-
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. Licencia</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div><!-- licencia -->
-
-					<div class="col-sm-12">
-						<h5 class="">Pasaporte</h5>
 					</div>
-					<div class="col-sm-12">
+					<div class="col-sm-4">
 						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. Pasaporte</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Pasaporte">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
+							<label for="">Certificado Registro</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
 							</div>
-							
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Reporte_Inspeccion</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Factura</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Pedimento Importación</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Bitacora de mantenimiento</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 offset-sm-4">
+						<div class="form-group">
+							<label for="">Checklist</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>
