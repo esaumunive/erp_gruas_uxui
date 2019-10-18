@@ -16,6 +16,13 @@
 		"oAP": "\/config.html",
 		"oF": 0
 		},
+	"\/equipment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/equipment.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -28,6 +35,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/list_deptos.html",
+		"oF": 0
+		},
+	"\/list_employes.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/list_employes.html",
 		"oF": 0
 		},
 	"\/list_enterp.html": {

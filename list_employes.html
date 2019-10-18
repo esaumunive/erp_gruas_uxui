@@ -182,9 +182,15 @@
 	<!-- SideNav -->
 	<div class="SideNav scroller">
 		<ul>
-			<li><a href="users.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevos</a></li>
+			<li><a href="main.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevos</a></li>
 			
-			<li><a href="list_users.html"><i style="vertical-align: middle;" class="material-icons">view_list</i> Listado</a></li> 
+			<li><a href="list_users.html"><i style="vertical-align: middle;" class="material-icons">list</i> Listado de empleados</a></li> 
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">fingerprint</i> Contratos</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">attach_money</i> Prestamos</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">pool</i> Vacaciones</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">report_problem</i> Actas Admin</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">local_library</i> Capacitación</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">touch_app</i> Checador</a></li>
 
 		</ul>
 	</div>
@@ -197,101 +203,90 @@
 <div class="AllDashboard animated fadeIn">
 
 	<div class="BreadCs">
-		<h5>Crear Usuario</h5>
+		<h5>Lista de empleados</h5>
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="main.html">Escritorio</a></li>
-			<li class="breadcrumb-item"><a href="index.html">Usuarios</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Crear usuario</li>
+			<li class="breadcrumb-item"><a href="list_employes.html">Empleados</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Listado de empleados</li>
 		</ul>
 	</div>
 
 	<!-- Dashboard -->
 	<div class="Dashboard scroller">
 		
+
 		<div class="row">
-
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Nombre(s)</label>
-					<input class="form-control" type="text" placeholder="Nombre(s)">
-				</div>
+			<div class="col-sm-3">
+				<a href="new_enterp.html" class="btn btn-gv"><i class="material-icons" style="vertical-align: middle;">add</i> Crear empleado</a>
 			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Apellid paterno</label>
-					<input class="form-control" type="text" placeholder="Apellid materno">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Apellid materno</label>
-					<input class="form-control" type="text" placeholder="Apellid materno">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Correo electrónico</label>
-					<input class="form-control" type="text" placeholder="Correo electrónico">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Teléfono</label>
-					<input class="form-control" type="text" placeholder="Teléfono">
-				</div>
-			</div>
+			<div class="col-sm-9">
+				<form class="form-inline">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar empleados" aria-label="Search">
+				</form>
+			</div> <br>
+			<div class="col-sm-12"><br>
+				<table class="table">
+					<thead>
 
+						<th>No.</th>
+						<th>Nombre</th>
+						<th>Correo electrónico</th>
+						<th>RFC</th>
+						<th>Teléfono</th>
+						<th>Acción</th>
+					</thead>
+					<tbody>
+						<tr>
 
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Perfil</label>
-					<select class="form-control">
-						<option readonly>Selecciona una opción</option>
-						<option>SuperUser</option>
-						<option>Director</option>
-						<option>Jefe de area</option>
-						<option>Administrador</option>
-						<option>Operador</option>
-						<option>Proveedor</option>
-						<option>Invitado</option>
-					</select>
-				</div>
-			</div>
+							<td>65</td>
+							<td>Siemens</td>
+							<td>info@siemens.com</td>
+							<td>SIM283712DE3</td>
+							<td>991 12393291</td>
+							
+							<td class="t_center">
+								<button class="BorrarBtn btn-floating-warning"><i class="material-icons" style="vertical-align: middle;">edit</i></button>
+								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Contraseña</label>
-					<input class="form-control" type="text" placeholder="Contraseña">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Confirmar contraseña</label>
-					<input class="form-control" type="text" placeholder="Confirmar contraseña">
-				</div>
-			</div>
+							</td>
+						</tr>
+						<tr>
 
+							<td>185</td>
+							<td>Schlumberger</td>
+							<td>contacto@schlumberger.com</td>
+							<td>SCH120212KOP</td>
+							<td>9931221212</td>
+							
+							<td class="t_center">
+								<button class="BorrarBtn btn-floating-warning"><i class="material-icons" style="vertical-align: middle;">edit</i></button>
+								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 
-
-
-			<div class="col-sm-4"> <br>
-				<div class="custom-control custom-switch form-group">
-					<input type="checkbox" class="custom-control-input" id="customSwitch1">
-					<label class="custom-control-label" for="customSwitch1">Inactivo / Activo</label>
-				</div>
-			</div>
-
-		
-		<div class="AllBtnsAction">
-			<div class="BtnCrear">
-				<button id="BtnCrear" type="submit" class="BtnCrear btn"><i class="material-icons" style="vertical-align: middle;">check_circle_outline</i> Crear usuario</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 
-		</div> <!-- row -->
-
 
 	</div>
+
+	<!-- pagination -->
+	<nav aria-label="..." class="PageGroup">
+		<ul class="pagination justify-content-center">
+			<li class="page-item active" aria-current="page">
+				<span class="page-link"> 1
+        			<span class="sr-only">(current)</span>
+				</span>
+			</li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+		</ul>
+	</nav>
+
+
 </div>
 <!-- Fin AllDashboard -->
 <!-- Fin Escritorio -->
