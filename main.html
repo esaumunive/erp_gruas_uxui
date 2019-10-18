@@ -280,7 +280,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
-							<label for="">Fecha de Laborar</label>
+							<label for="">Fecha Ingreso a Laborar</label>
 							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de ingreso a laborar">
 						</div>
 					</div>
@@ -302,19 +302,32 @@
 						<label for="">Categoría</label>
 						<select class="form-control">
 							<option readonly value="">Selecciona una opción</option>
-							<option >Base</option>
+							<option>Base</option>
 							<option>3 Meses</option>
-							<option>Eventual</option>
 							<option>Por obra/Proyecto</option>
 						</select>
 					</div>
-					<div class="col-sm-12"> <br>
+					
+				</div> <!-- row -->
+				<div class="row">
+					<div class="col-sm-6"> <br>
+						<div class="form-group">
+							<label for="">Salario</label>
+							<input data-provide="datepicker" class="form-control" type="number" placeholder="Salario del trabajador">
+						</div>
+					</div>
+					<div class="col-sm-6"> <br>
+						<div class="form-group">
+							<label for="">Salario diario integrado</label>
+							<input data-provide="datepicker" class="form-control" type="number" placeholder="Salario diario integrado">
+						</div>
+					</div>
+					<div class="col-sm-12"> 
 						<div class="form-group">
 							<label for="">Funciones y responsabilidades del puesto</label>
 							<textarea name="" class="form-control" type="text" placeholder="Perfil del puesto"></textarea> 
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -1206,14 +1219,14 @@
 	</div>
 
 
-
 	<!-- titulo separador -->
-<h5 class="TitleInfo">Asignación de vehículo</h5>
-		
+<h5 class="TitleInfo">Asignación de unidades</h5>
+
 	<div class="row">
+		
 		<div class="col-sm-3">
 			<div class="form-group">
-				<label for="">Vehículo</label>
+				<label for="">Unidades Móviles</label>
 				<select class="form-control">
 					<option readonly>Selecciona una opción</option>
 					<option>Volkswaguen UP Gris Plata</option>
@@ -1243,43 +1256,102 @@
 	</div>
 
 	<!-- titulo separador -->
-<h5 class="TitleInfo">Asignación de celular</h5>
-
+<h5 class="TitleInfo">Asignación de equipos</h5>
+		
 	<div class="row">
 		<div class="col-sm-4">
 			<div class="form-group">
-				<label for="">Asignar Teléfono</label>
+				<label for="">Categorías</label>
 				<select class="form-control">
 					<option readonly>Selecciona una opción</option>
-					<option>Huawei J7</option>
-					<option>Motorola E4</option>
-					<option>iPhone 8</option>
+					<option>Equipo de computo</option>
+					<option>Accesorios de computo</option>
+					<option>Teléfono</option>
 				</select>
 			</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="form-group">
-				<label for="">Asignar un número</label>
-				<input class="form-control" type="number" placeholder="Asignar no.">
+				<label for="">Equipo</label>
+				<select class="form-control">
+					<option readonly>Selecciona una opción</option>
+					<option>Dell inspiron 221</option>
+					<option>HP pavilion 21</option>
+					<option>Generica</option>
+				</select>
 			</div>
 		</div>
-
 		<div class="col-sm-4">
 			<div class="form-group">
-				<label for="">Imei</label>
-				<input class="form-control" type="text" placeholder="Imei">
+				<label for="">No. de serie</label>
+				<input class="form-control" type="text" placeholder="0292399210238849" disabled>
 			</div>
 		</div>
-
-		
-		<!-- <div class="col-sm-3">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label for="">Marca </label>
+				<input class="form-control" type="text" placeholder="HP" disabled>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label for="">Modelo</label>
+				<input class="form-control" type="text" placeholder="M2019" disabled>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label for="">No. de piezas</label>
+				<input class="form-control" type="number" placeholder="No. de piezas">
+			</div>
+		</div>
+		<div class="col-sm-3">
 			<div class="form-group">
 				<label for="">&nbsp;</label>
-				<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Asignar</button>
+				<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
 			</div>
-		</div> -->
+		</div>
+		<div class="col-sm-12">
+			<div class="MiniDivider"></div>
 
-	</div> <!-- row -->
+			<table class="table">
+				<thead>
+
+					<th>Folio</th>
+					<th>Equipo Asignado</th>
+					<th>Fecha de Asignada</th>
+					<th>Marca</th>
+					<th>Modelo</th>
+					<th>Cantidad</th>
+					
+					
+					<th>Acción</th>
+				</thead>
+				<tbody>
+					<tr>
+
+						<td>123</td>
+						<td>HP pavilion 21</td>
+						<td>14-10-2019</td>
+						<td>Hp</td>
+						<td>2019</td>
+						<td>2</td>
+						
+						<td class="t_center">
+							<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+		
+	</div>
+
+
+
+
 
 		<div class="AllBtnsAction">
 			<div class="BtnCrear_grey">

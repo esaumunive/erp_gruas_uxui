@@ -16,6 +16,13 @@
 		"oAP": "\/config.html",
 		"oF": 0
 		},
+	"\/equipment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/equipment.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -64,6 +71,24 @@
 		"oA": 0,
 		"oAP": "\/new_enterp.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/static\/css\/animate.css": {
 		"aP": 1,
@@ -383,7 +408,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/static\/styleGv.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"rU": 0,
 		"sI": 0,
@@ -613,7 +638,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 592434580,
-	"displayValue": "http_ErpGv",
+	"displayValue": "erp_gruas_uxui",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/static\/favicon\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
