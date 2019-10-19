@@ -16,6 +16,9 @@ $(document).ready(function(){
 	});
 	$('[data-toggle="tooltip"]').tooltip();
 	$('[data-toggle="popover"]').popover();
+	$('#myCollapsible').collapse({
+		toggle: false
+	});
 
 	// Fullscreen Pantalla
 	function toggleFullScreen() {

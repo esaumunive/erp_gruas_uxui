@@ -2136,6 +2136,10 @@ table td {
   font-size: 0.95em;
   padding: 0.6em 0 0 0 !important;
 }
+table .Visualizar {
+  background: none !important;
+}
 table .Visualizar i {
+  background: none !important;
   color: #444;
 }

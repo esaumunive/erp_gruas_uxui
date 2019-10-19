@@ -223,9 +223,12 @@
 					<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar empleados" aria-label="Search">
 				</form>
 			</div> <br>
+
+			
+
 			<div class="col-sm-12"><br>
 				<table class="table">
-					<thead>
+					<thead class="thead-dark">
 						<th>No.</th>
 						<th>Nombre</th>
 						<th>Puesto</th>
@@ -237,7 +240,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>5</td>
+							<td class="t_center">5</td>
 							<td>Diana Tadeo H</td>
 							<td>Recursos Humanos</td>
 							<td>9211235321</td>
@@ -245,7 +248,7 @@
 								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i> </a>  dtadeo@gruasvillarreal.com.mx
 							</td>
 							<td class="t_center Visualizar">
-								<button class="" data-toggle="modal" data-target="#Expediente">
+								<button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 									<i class="material-icons" style="vertical-align: middle;" data-toggle="tooltip" data-placement="top" title="Visualizar">visibility</i>
 								</button>
 							</td>
@@ -257,7 +260,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>122</td>
+							<td class="t_center">122</td>
 							<td>Santiago Morales Gonzalez</td>
 							<td>Operador de grúa</td>
 							<td>9992393291</td>
@@ -276,9 +279,8 @@
 
 							</td>
 						</tr>
-
 						<tr>
-							<td>209</td>
+							<td class="t_center">209</td>
 							<td><a data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." href="#">Alejandro Dominguez</a></td>
 							<td>Auxiliar TIC</td>
 							<td>9213209329</td>
@@ -298,6 +300,12 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<div class="collapse" id="collapseExample">
+					<div class="card card-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					</div>
+				</div>
 
 
 			</div>
@@ -337,17 +345,16 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ExpedienteTitle">Modal title</h5>
+        <h5 class="modal-title" id="ExpedienteTitle">Santiago Morales Gonzalez</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
