@@ -44,6 +44,22 @@ body {
   background: #f5cc20;
   color: #111;
 }
+.btn-flat {
+  border: 1px solid #757575;
+  border-radius: 0.3em;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+}
+.btn-flat:hover,
+.btn-flat:active,
+.btn-flat:focus {
+  border: 1px solid #f5cc20;
+  border-radius: 0.6em;
+  background: #f5cc20;
+}
 .btn-floating {
   border-radius: 50%;
   background: #f5cc20;
@@ -56,6 +72,15 @@ body {
   padding: 0.4em 0.5em 0.5em 0.5em;
 }
 .btn-floating-default i {
+  font-size: 1.3em;
+}
+.btn-floating-default2 {
+  border-radius: 50%;
+  background: #999;
+  color: #ffffff;
+  padding: 0.4em 0.5em 0.5em 0.5em;
+}
+.btn-floating-default2 i {
   font-size: 1.3em;
 }
 .btn-floating-success {
@@ -2142,4 +2167,13 @@ table .Visualizar {
 table .Visualizar i {
   background: none !important;
   color: #444;
+}
+.ModalGV .btn-flat {
+  margin-left: 1.5em;
+  padding: 0.3em 0.8em;
+  font-size: 0.8em;
+  color: #282828;
+}
+.ModalGV .btn-flat i {
+  font-size: 1.1em;
 }

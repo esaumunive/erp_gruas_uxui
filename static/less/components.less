@@ -53,6 +53,20 @@ body {
     background: @amarillo;
     color: @negro;
 }
+.btn-flat {
+    border: 1px solid lighten(@gris3, 30%);
+    border-radius: 0.3em;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+}
+.btn-flat:hover, .btn-flat:active, .btn-flat:focus {
+    border: 1px solid @amarillo;
+    border-radius: 0.6em;
+    background: @amarillo;
+}
 .btn-floating {
     border-radius: 50%;
     background: @amarillo;
@@ -61,6 +75,15 @@ body {
 .btn-floating-default {
     border-radius: 50%;
     background: @bg3;
+    color: @blanco;
+    padding: 0.4em 0.5em 0.5em 0.5em;
+    i {
+        font-size: 1.3em;
+    }
+}
+.btn-floating-default2 {
+    border-radius: 50%;
+    background: #999;
     color: @blanco;
     padding: 0.4em 0.5em 0.5em 0.5em;
     i {
@@ -110,6 +133,9 @@ body {
 }
 .t_justify {
     text-align: justify;
+}
+.ModalGV {
+
 }
 .MiniDivider {
     margin: 2em 0;
