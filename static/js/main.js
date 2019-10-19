@@ -15,6 +15,7 @@ $(document).ready(function(){
 		$('.AllSideBar').toggle("fast");
 	});
 	$('[data-toggle="tooltip"]').tooltip();
+	$('[data-toggle="popover"]').popover();
 
 	// Fullscreen Pantalla
 	function toggleFullScreen() {

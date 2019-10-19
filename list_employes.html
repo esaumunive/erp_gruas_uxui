@@ -182,9 +182,8 @@
 	<!-- SideNav -->
 	<div class="SideNav scroller">
 		<ul>
-			<li><a href="main.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevos</a></li>
-			
-			<li><a href="list_users.html"><i style="vertical-align: middle;" class="material-icons">list</i> Listado de empleados</a></li> 
+			<li><a href="main.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevo ingreso</a></li>
+			<li><a href="list_employes.html"><i style="vertical-align: middle;" class="material-icons">list</i> Lista de empleados</a></li> 
 			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">fingerprint</i> Contratos</a></li>
 			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">attach_money</i> Prestamos</a></li>
 			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">pool</i> Vacaciones</a></li>
@@ -207,17 +206,16 @@
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="main.html">Escritorio</a></li>
 			<li class="breadcrumb-item"><a href="list_employes.html">Empleados</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Listado de empleados</li>
+			<li class="breadcrumb-item active" aria-current="page">Lista de empleados</li>
 		</ul>
 	</div>
 
 	<!-- Dashboard -->
 	<div class="Dashboard scroller">
-		
 
 		<div class="row">
 			<div class="col-sm-3">
-				<a href="new_enterp.html" class="btn btn-gv"><i class="material-icons" style="vertical-align: middle;">add</i> Crear empleado</a>
+				<a href="main.html" class="btn btn-gv"><i class="material-icons" style="vertical-align: middle;">add</i> Crear empleado</a>
 			</div>
 			<div class="col-sm-9">
 				<form class="form-inline">
@@ -235,6 +233,7 @@
 						<th>Correo electrónico</th>
 						<th>Visualizar</th>
 						<th>Acción</th>
+						
 					</thead>
 					<tbody>
 						<tr>
@@ -242,82 +241,87 @@
 							<td>Diana Tadeo H</td>
 							<td>Recursos Humanos</td>
 							<td>9211235321</td>
-							<td><a target="_blank">
-								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i>  dtadeo@gruasvillarreal.com.mx</a>
+							<td><a href="mailto:dtadeo@gruasvillarreal.com.mx" target="_blank">
+								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i> </a>  dtadeo@gruasvillarreal.com.mx
 							</td>
-							<td class="t_center">
-								<button class="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<td class="t_center Visualizar">
+								<button class="" data-toggle="modal" data-target="#Expediente">
 									<i class="material-icons" style="vertical-align: middle;" data-toggle="tooltip" data-placement="top" title="Visualizar">visibility</i>
 								</button>
 							</td>
 							<td class="t_center">
+								<button class="BorrarBtn btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;">list_alt</i></button>
 								<button class="BorrarBtn btn-floating-warning"><i class="material-icons" style="vertical-align: middle;">edit</i></button>
 								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 
 							</td>
-						</tr>
-						<tr>
-							<div class="collapse" id="collapseExample">
-								<div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-								</div>
-							</div>
 						</tr>
 						<tr>
 							<td>122</td>
 							<td>Santiago Morales Gonzalez</td>
 							<td>Operador de grúa</td>
 							<td>9992393291</td>
-							<td><a >
-								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i>  smorales@gruasvillarreal.com.mx</a>
+							<td><a href="mailto:smorales@gruasvillarreal.com.mx" target="_blank">
+								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i></a>  smorales@gruasvillarreal.com.mx
 							</td>
-							<td class="t_center">
-								<button class="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<td class="t_center Visualizar">
+								<button class="" data-toggle="modal" data-target="#Expediente">
 									<i class="material-icons" style="vertical-align: middle;" data-toggle="tooltip" data-placement="top" title="Visualizar">visibility</i>
 								</button>
 							</td>
 							<td class="t_center">
+								<button class="BorrarBtn btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;">list_alt</i></button>
 								<button class="BorrarBtn btn-floating-warning"><i class="material-icons" style="vertical-align: middle;">edit</i></button>
 								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
 
 							</td>
 						</tr>
+
 						<tr>
 							<td>209</td>
-							<td>Alejandro Dominguez </td>
+							<td><a data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." href="#">Alejandro Dominguez</a></td>
 							<td>Auxiliar TIC</td>
 							<td>9213209329</td>
-							<td><a>
-								<i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i>  adominguez@gruasvillarreal.com.mx</a>
+							<td>
+								<a href="mailto:adominguez@gruasvillarreal.com.mx" target="_blank"><i class="material-icons" style="vertical-align: middle;font-size: 1.3em;">email</i></a>  adominguez@gruasvillarreal.com.mx
 							</td>
-							<td class="t_center">
-								<button class="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<td class="t_center Visualizar">
+								<button class="" data-toggle="modal" data-target="#Expediente">
 									<i class="material-icons" style="vertical-align: middle;" data-toggle="tooltip" data-placement="top" title="Visualizar">visibility</i>
 								</button>
 							</td>
 							<td class="t_center">
+								<button class="BorrarBtn btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;">list_alt</i></button>
 								<button class="BorrarBtn btn-floating-warning"><i class="material-icons" style="vertical-align: middle;">edit</i></button>
 								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-
 							</td>
 						</tr>
 					</tbody>
 				</table>
+
+
 			</div>
 		</div>
-
 
 	</div>
 
 	<!-- pagination -->
-	<nav aria-label="..." class="PageGroup">
+	<nav aria-label="..." class="PageGroup"> <br>
 		<ul class="pagination justify-content-center">
 			<li class="page-item active" aria-current="page">
 				<span class="page-link"> 1
         			<span class="sr-only">(current)</span>
 				</span>
 			</li>
-			<li class="page-item"><a class="page-link" href="#">2</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">4</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -328,8 +332,26 @@
 
 
 
-
-
+<!-- Modal -->
+<div class="modal fade" id="Expediente" tabindex="-1" role="dialog" aria-labelledby="ExpedienteTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ExpedienteTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 	<script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
