@@ -208,9 +208,9 @@
 <div class="AllDashboard animated fadeIn">
 
 	<div class="BreadCs">
-		<h5>Capital Humano</h5>
+		<h5>Almacen</h5>
 		<ul class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">Escritorio</a></li>
+			<li class="breadcrumb-item"><a href="#">Almacen</a></li>
 			<li class="breadcrumb-item"><a href="#">Altas</a></li>
 			<li class="breadcrumb-item active" aria-current="page">Crear alta</li>
 		</ul>
@@ -220,7 +220,7 @@
 	<div class="Dashboard scroller">
 
 		<!-- titulo separador -->
-		<h5 class="TitleInfo">Información del puesto</h5>
+		<h5 class="TitleInfo">Agregar nuevo producto</h5>
 
 		<div class="row">
 			<div class="col-sm-2 Picture">
@@ -337,1034 +337,129 @@
 			</div>
 		</div>
 
-<!-- titulo separador -->
-		<h5 class="TitleInfo">Información Personal</h5>
+		<!-- titulo separador -->
+		<div class="col-sm-12">	
+			<h5 class="TitleInfo">Tabla de productos</h5>
+		</div>
 
-		<div class="row">
-			<div class="col-sm-2 Picture">
-				<label for="">Firma</label>
-				<img src="static/images/firma.png" alt=""><br><br>
-		
-				<div class="Box t_center">		
-					<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1">
-					<label for="input-c-file-imagen" title="Firma">
-						<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-					</label>
+		<div class="col-sm-12">	
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="">Subir documento</label><br>
+						<div class="Box t_center">		
+							<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+							<label for="input-c-file-imagen" title="No. de Cuenta Infonavit">
+								<i class="fa fa-upload"></i> <span class="iborrainputfile"> .pdf</span>
+							</label>
+						</div>
+					</div>
 				</div>
-
-			</div>
-			<div class="col-sm-10">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Nombre del empleado</label>
-							<input class="form-control" type="text" placeholder="Apellido Paterno">
-						</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Folio/número</label>
+						<input class="form-control" type="text" placeholder="No. de folio/número">
 					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Apellido paterno</label>
-							<input class="form-control" type="text" placeholder="Apellido paterno">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Apellido materno</label>
-							<input class="form-control" type="text" placeholder="Apellido materno">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Edad</label>
-							<input class="form-control" type="number" placeholder="Edad">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Fecha de nacimiento</label>
-							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de nacimiento">
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Sexo</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Hombre</option>
-								<option>Mujer</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Nacionalidad</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Mexicana</option>
-								<option>Extranjero</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Correo electrónico</label>
-							<input class="form-control" type="email" placeholder="Correo electrónico">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Celular personal</label>
-							<input class="form-control" type="number" placeholder="Celular personal">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Teléfono(s)</label>
-							<input class="form-control" type="number" placeholder="Casa o emergencia">
-						</div>
-					</div>
-
-			<!-- subtitulo separador -->
-				<div class="col-sm-12">
-					<h5 class="SubTitleInfo">Domicilio</h5>
 				</div>
-
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Calle</label>
-							<input class="form-control" type="text" placeholder="Calle y no.">
-						</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Documento</label>
+						<input class="form-control" type="text" placeholder="Certificado cédula constancia">
 					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Colonia</label>
-							<input class="form-control" type="text" placeholder="Colonia">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Código postal</label>
-							<input class="form-control" type="text" placeholder="CP.">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Municipio</label>
-							<input class="form-control" type="text" placeholder="Municipio">
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">Estado</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>Baja California</option>
-								<option>Chiapas</option>
-								<option>Ciudad de México</option>
-								<option>Nuevo León</option>
-								<option>Oaxaca</option>
-								<option>Tabasco</option>
-								<option>Veracruz</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="form-group">
-							<label for="">País</label>
-							<select class="form-control">
-								<option readonly>Selecciona una opción</option>
-								<option>México</option>
-								<option>Venezuela</option>
-								<option>Estados Unidos</option>
-								<option>Alemania</option>
-							</select>
-						</div>
-					</div>
-
-				<!-- subtitulo separador -->
-				<div class="col-sm-12">
-					<h5 class="SubTitleInfo">Información adicional</h5>
 				</div>
-					
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Acta de nacimiento</label>
-							<input class="form-control" type="text" placeholder="Acta de nacimiento">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Acta nacimiento">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Descripción</label>
+						<input class="form-control" type="text" placeholder="Descripción del docto">
 					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">RFC</label>
-							<input class="form-control" type="text" placeholder="RFC">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="RFC">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">CURP</label>
-							<input class="form-control" type="text" placeholder="CURP">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="CURP">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">NSS</label>
-							<input class="form-control" type="text" placeholder="NSS">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="NSS">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Curriculum Vitae</label>
-							<input class="form-control" type="text" placeholder="Curriculum Vitae" disabled>
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Curriculum">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Crédito Infonavit</label>
-							<input class="form-control" type="text" placeholder="No. de Crédito">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Comprobante Dom.</label>
-							<input class="form-control" type="text" placeholder="Domicilio">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">Cartilla militar</label>
-							<input class="form-control" type="text" placeholder="No. cartilla militar">
-
-							<div class="Box t_center">		
-								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-								<label for="input-c-file-imagen" title="Crédito Infonavit">
-									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label for="">No. de dependientes</label>
-							<input class="form-control" type="number" placeholder="No. de dependientes">
-						</div>
-					</div>
-					<div class="col-sm-9">
-						<div class="form-group">
-							<label for="">Dependientes y % (Personas)</label>
-							<input class="form-control" type="number" placeholder="Nombre de dependientes y porcentaje">
-						</div>
-					</div> 
- 
-				<div class="col-sm-12"><br> 
-					<h5 class="">Cuenta bancaria</h5>
 				</div>
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-5">
-									<label for="">No. de cuenta</label>
-									<input class="form-control" type="text" placeholder="No. de cuenta">
-								</div>
-								<div class="col-sm-5">
-									<label for="">Nombre del banco</label>
-									<select class="form-control">
-										<option readonly>Selecciona una opción</option>
-										<option>Banamex</option>
-										<option>BBVA</option>
-										<option>Banorte/IXE</option>
-										<option>Bajío</option>
-										<option>HSBC</option>
-										<option>Scotiabank</option>
-										<option>Santander</option>
-										<option>Coppel</option>
-										<option>Famsa</option>
-									</select>
-								</div>
-
-								<div class="col-sm-2">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div><!-- licencia -->
-
-				<div class="col-sm-12">
-					<h5 class="">INE/IFE</h5>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Empresa que emité</label>
+						<input class="form-control" type="text" placeholder="Empresa que emitió">
+					</div>
 				</div>
-
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. de INE</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div><!-- licencia -->
-
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Fecha de vencimiento</label>
+						<input class="form-control" type="date" placeholder="Fecha de vencimiento">
+					</div>
+				</div>
 				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">&nbsp;</label>
+						<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
+					</div>
+				</div>
+			</div> <!-- row -->
+
+			<div class="row">
 				<div class="col-sm-12">
-					<h5 class="">Licencia para conducir</h5>
-				</div>
+					<div class="MiniDivider"></div>
 
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. Licencia</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Licencia Infonavit">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div><!-- licencia -->
+					<table class="table">
+						<thead>
+							<th>Folio</th>
+							<th>Documento</th>
+							<th>Fecha de Emisión</th>
+							<th>Fecha de Vencimiento</th>
+							<th>Docto.</th>
+							<th>Estatus</th>
+							<th>Acción</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>209238198</td>
+								<td>Acta constitutiva</td>
+								<td>12-10-2019</td>
+								<td>12-10-2020</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>109238128</td>
+								<td>RFC</td>
+								<td>12-10-1995</td>
+								<td>-</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: orange;" data-toggle="tooltip" data-placement="top" title="Está por vencer">report_problem</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>139238198</td>
+								<td>Cédula fiscal</td>
+								<td>12-10-1995</td>
+								<td>-</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: red;" data-toggle="tooltip" data-placement="top" title="Vencido">close</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 
-					<div class="col-sm-12">
-						<h5 class="">Pasaporte</h5>
-					</div>
-					<div class="col-sm-12">
-						<div class="form-group">
-							
-							<div class="row">
-								<div class="col-sm-3">
-									<label for="">No. Pasaporte</label>
-									<input class="form-control" type="text" placeholder="No. Licencia">
-								</div>
-								<div class="col">
-									<label for="">Fecha de expedición</label>
-									<input class="form-control" type="date" placeholder="Fecha de expedición">
-								</div>
-								<div class="col">
-									<label for="">Fecha de Vencimiento</label>
-									<input class="form-control" type="date" placeholder="Fecha de Vencimiento">
-								</div>
-								<div class="col">
-									<div class="Box t_center">	
-										<label for="">Documento</label><br>
-										<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-										<label for="input-c-file-imagen" title="Pasaporte">
-											<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
-										</label>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
 				</div>
-			</div>
-		</div> <!-- row -->	
-
-<!-- titulo separador -->
-<h5 class="TitleInfo">Capacitaciones / Cursos / Especialidades</h5>
-		
-		<div class="row">
-			<div class="col-sm-2">
-				<div class="form-group">
-					<label for="">Subir documento</label><br>
-					<div class="Box t_center">		
-						<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-						<label for="input-c-file-imagen" title="No. de Cuenta Infonavit">
-							<i class="fa fa-upload"></i> <span class="iborrainputfile"> .pdf</span>
-						</label>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Folio/número</label>
-					<input class="form-control" type="text" placeholder="No. de folio/número">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Categorías</label>
-					<select class="form-control">
-						<option readonly>Selecciona una opción</option>
-						<option>Administrativo</option>
-						<option>Operativo</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Cursos/Capacitaciones</label>
-					<select class="form-control">
-						<option readonly>Selecciona una opción</option>
-						<option>Riego eléctrico</option>
-						<option>Básico de seguridad</option>
-						<option>Riegos en las alturas </option>
-					</select>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Empresa que emité</label>
-					<input class="form-control" type="text" placeholder="Empresa que emitió">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Persona que expidé</label>
-					<input class="form-control" type="text" placeholder="Persona que expidé">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Impartido</label>
-					<input class="form-control" type="text" placeholder="Impartido por:">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Fecha de expedición</label>
-					<input class="form-control" type="date" placeholder="Fecha de expedición">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Fecha de vencimiento</label>
-					<input class="form-control" type="date" placeholder="Fecha de vencimiento">
-				</div>
-			</div>
-			
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">&nbsp;</label>
-					<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
-				</div>
-			</div>
-		</div> <!-- row -->
-
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="MiniDivider"></div>
-
-				<table class="table">
-					<thead>
-						<th>Folio</th>
-						<th>Documento</th>
-						<th>Empresa</th>
-						<th>Fecha de Emisión</th>
-						<th>Fecha de Vencimiento</th>
-						<th>Docto.</th>
-						<th>Estatus</th>
-						<th>Acción</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>209238198</td>
-							<td>Riesgo eléctrico</td>
-							<td>Secae</td>
-							<td>12-10-2019</td>
-							<td>12-10-2020</td>
-							<td class="t_center">
-								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
-							</td>
-							<td class="t_center">
-								<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
-							</td>
-							<td class="t_center">
-								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-							</td>
-						</tr>
-						<tr>
-							<td>109238128</td>
-							<td>Riesgos en las alturas</td>
-							<td>Secae</td>
-							<td>12-10-2019</td>
-							<td>12-10-2020</td>
-							<td class="t_center">
-								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
-							</td>
-							<td class="t_center">
-								<i class="material-icons" style="vertical-align: middle;color: orange;" data-toggle="tooltip" data-placement="top" title="Está por vencer">report_problem</i>
-							</td>
-							<td class="t_center">
-								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-							</td>
-						</tr>
-						<tr>
-							<td>139238198</td>
-							<td>Capacitación</td>
-							<td>Secae</td>
-							<td>12-10-2019</td>
-							<td>12-10-2020</td>
-							<td class="t_center">
-								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
-							</td>
-							<td class="t_center">
-								<i class="material-icons" style="vertical-align: middle;color: red;" data-toggle="tooltip" data-placement="top" title="Vencido">close</i>
-							</td>
-							<td class="t_center">
-								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-
 			</div>
 		</div>
-
-
-<!-- titulo separador -->
-<h5 class="TitleInfo">Expediente Médico</h5>
-		
-		<div class="row">
-			<div class="col-sm-2">
-				<div class="form-group">
-					<label for="">Subir documento</label><br>
-					<div class="Box t_center">		
-						<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
-						<label for="input-c-file-imagen" title="No. de Cuenta Infonavit">
-							<i class="fa fa-upload"></i> <span class="iborrainputfile"> .pdf</span>
-						</label>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">No. de exp. lab.</label>
-					<input class="form-control" type="text" placeholder="No. de expediente">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Proyecto asignado</label>
-					<input class="form-control" type="text" placeholder="Braskem" disabled>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<label for="">Tipo de estudio</label>
-				<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Básico</option>
-					<option>Completo</option>
-				</select>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Laboratorio que emité</label>
-					<input class="form-control" type="text" placeholder="Laboratorio que emitió">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Fecha de expedición</label>
-					<input class="form-control" type="date" placeholder="Fecha de expedición">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">Fecha de vencimiento</label>
-					<input class="form-control" type="date" placeholder="Fecha de vencimiento">
-				</div>
-			</div>
-			
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">&nbsp;</label>
-					<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
-				</div>
-			</div>
-		</div> <!-- row -->
-
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="MiniDivider"></div>
-
-				<table class="table">
-					<thead>
-						<th></th>
-						<th>Folio</th>
-						<th>Proyec Asignado</th>
-						<th>Tipo de estudio</th>
-						<th>Empresa</th>
-						<th>Fecha de Emisión</th>
-						<th>Fecha de Vencimiento</th>
-						<th>Docto.</th>
-						<th>Estatus</th>
-						<th>Acción</th>
-					</thead>
-					<tbody>
-						<tr>
-							
-						</tr>
-						<tr>
-							<td>
-								<button data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-									<i class="material-icons">keyboard_arrow_down</i>
-								</button>
-							</td>
-							<td>209238198</td>
-							<td>Braskem</td>
-							<td>Completo</td>
-							<td>Chontalpa</td>
-							<td>12-10-2019</td>
-							<td>12-10-2020</td>
-							<td class="t_center">
-								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
-							</td>
-							<td class="t_center">
-								<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
-							</td>
-							<td class="t_center">
-								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-							</td>
-						</tr>
-						<div class="collapse" id="collapseExample">
-								<div class="Chips">
-
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Química sanguinea
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Biometría hemática
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> VDRL
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Grupo y RH
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Exámen general de orina
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Electrocardiograma
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> ERX Torax y lumbar AP
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Antidoping
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Audiometría
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Espirometría
-										<i class="close material-icons">close</i>
-									</div>
-									<div class="chip">
-										<i class="material-icons" style="vertical-align: middle;">check</i> Agudeza visual
-										<i class="close material-icons">close</i>
-									</div>
-								</div>
-							</div>
-					</tbody>
-				</table>
-
-			</div>
-		</div>
-
-
-<!-- titulo separador -->
-<h5 class="TitleInfo">Uniformes</h5>
-		
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Proyecto asignado</label>
-					<input class="form-control" type="text" placeholder="Braskem" disabled>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Puesto</label>
-					<input class="form-control" type="text" placeholder="Maniobrista" disabled>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Fecha de expedición</label>
-					<input class="form-control" type="date" placeholder="Fecha de expedición">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Materiales</label>
-					<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Camisas</option>
-					<option>Botas</option>
-					<option>Playeras</option>
-				</select>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<label for="">Cantidad</label>
-					<input class="form-control" type="number" placeholder="Cantidad en piezas">
-				</div>
-			</div>
-			
-			
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="">&nbsp;</label>
-					<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
-				</div>
-			</div>
-		</div> <!-- row -->
-
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="MiniDivider"></div>
-
-				<table class="table">
-					<thead>
-
-						<th>Folio</th>
-						<th>Proyec Asignado</th>
-						<th>Fecha de Asignada</th>
-						<th>Cantidad</th>
-						<th>Material</th>
-						
-						<th>Acción</th>
-					</thead>
-					<tbody>
-						<tr>
-
-							<td>123</td>
-							<td>Braskem</td>
-							<td>12-10-2019</td>
-							<td>5</td>
-							<td>Camisa</td>
-							
-							<td class="t_center">
-								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-
-			</div>
-		</div>
-
-<!-- titulo separador -->
-<h5 class="TitleInfo">Equipo de protección personal (EPP)</h5>
-		
-	<div class="row">
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Proyecto asignado</label>
-				<input class="form-control" type="text" placeholder="Braskem" disabled>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Puesto</label>
-				<input class="form-control" type="text" placeholder="Maniobrista" disabled>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Fecha de expedición</label>
-				<input class="form-control" type="date" placeholder="Fecha de expedición">
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Materiales</label>
-				<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Mascarilla</option>
-					<option>Overol</option>
-					<option>Casco</option>
-					<option>Lentes</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Cantidad</label>
-				<input class="form-control" type="number" placeholder="Cantidad en piezas">
-			</div>
-		</div>
-		
-		
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">&nbsp;</label>
-				<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
-			</div>
-		</div>
-	</div> <!-- row -->
-
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="MiniDivider"></div>
-
-			<table class="table">
-				<thead>
-
-					<th>Folio</th>
-					<th>Proyec Asignado</th>
-					<th>Fecha de Asignada</th>
-					<th>Cantidad</th>
-					<th>Material</th>
-					
-					<th>Acción</th>
-				</thead>
-				<tbody>
-					<tr>
-
-						<td>123</td>
-						<td>Braskem</td>
-						<td>14-10-2019</td>
-						<td>2</td>
-						<td>Cascos</td>
-						
-						<td class="t_center">
-							<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-						</td>
-					</tr>
-
-				</tbody>
-			</table>
-
-		</div>
-	</div>
-
-
-	<!-- titulo separador -->
-<h5 class="TitleInfo">Asignación de unidades</h5>
-
-	<div class="row">
-		
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">Unidades Móviles</label>
-				<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Volkswaguen UP Gris Plata</option>
-					<option>Volkswaguen UP Gris Osc</option>
-					<option>Volkswaguen Saveiro</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">Placas</label>
-				<input class="form-control" type="text" placeholder="XZ-E289-A" disabled>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">No. económico</label>
-				<input class="form-control" type="text" placeholder="M-14" disabled>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">Seguro</label>
-				<input class="form-control" type="text" placeholder="GNP" disabled>
-			</div>
-		</div>
-	</div>
-
-	<!-- titulo separador -->
-<h5 class="TitleInfo">Asignación de equipos</h5>
-		
-	<div class="row">
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Categorías</label>
-				<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Equipo de computo</option>
-					<option>Accesorios de computo</option>
-					<option>Teléfono</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">Equipo</label>
-				<select class="form-control">
-					<option readonly>Selecciona una opción</option>
-					<option>Dell inspiron 221</option>
-					<option>HP pavilion 21</option>
-					<option>Generica</option>
-				</select>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="form-group">
-				<label for="">No. de serie</label>
-				<input class="form-control" type="text" placeholder="0292399210238849" disabled>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">Marca </label>
-				<input class="form-control" type="text" placeholder="HP" disabled>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">Modelo</label>
-				<input class="form-control" type="text" placeholder="M2019" disabled>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">No. de piezas</label>
-				<input class="form-control" type="number" placeholder="No. de piezas">
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="form-group">
-				<label for="">&nbsp;</label>
-				<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
-			</div>
-		</div>
-		<div class="col-sm-12">
-			<div class="MiniDivider"></div>
-
-			<table class="table">
-				<thead>
-
-					<th>Folio</th>
-					<th>Equipo Asignado</th>
-					<th>Fecha de Asignada</th>
-					<th>Marca</th>
-					<th>Modelo</th>
-					<th>Cantidad</th>
-					
-					
-					<th>Acción</th>
-				</thead>
-				<tbody>
-					<tr>
-
-						<td>123</td>
-						<td>HP pavilion 21</td>
-						<td>14-10-2019</td>
-						<td>Hp</td>
-						<td>2019</td>
-						<td>2</td>
-						
-						<td class="t_center">
-							<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
-						</td>
-					</tr>
-
-				</tbody>
-			</table>
-
-		</div>
-		
-	</div>
-
-
-
 
 
 		<div class="AllBtnsAction">
