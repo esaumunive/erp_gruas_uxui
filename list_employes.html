@@ -222,8 +222,19 @@
 					<i class="fa fa-search" aria-hidden="true"></i>
 					<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar empleados" aria-label="Search">
 				</form>
-			</div> <br>
+			</div> 
 
+<div class="col-sm-12"><br>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+			<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Empleados</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cursos</a>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
 			<div class="col-sm-12"><br>
 
 				<table class="table">
@@ -240,7 +251,7 @@
 					<tbody>
 						<tr>
 							<td class="t_center">5</td>
-							<td>Diana Tadeo H</td>
+							<td class="NameEmploy">Diana Tadeo H  <span> <a href="">Editar</a> | <a href="">Borrar</a></span></td>
 							<td>Recursos Humanos</td>
 							<td>9211235321</td>
 							<td><a href="mailto:dtadeo@gruasvillarreal.com.mx" target="_blank">
@@ -250,11 +261,11 @@
 							<td class="t_center">
 								<a title="Vista rápida" data-toggle="modal" data-target="#Expediente" href="#Expediente" class="btn-floating-default2" ><i class="material-icons" style="vertical-align: middle;color: white;">visibility</i></a>
 								<a data-fancybox href="static/pdf/pdf-test.pdf" class="btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;color: white;">list_alt</i></a>
-								<a title="Editar info" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">edit</i></a>
-								<a title="Borrar" class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;color: white;">delete</i></a>
+								<a title="Certificados" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">school</i></a>
+								
 							</td>
 						</tr>
-						<tr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque expedita doloribus reiciendis iusto qui quia quam, harum quos. Necessitatibus dolorem, consectetur mollitia odit recusandae corporis facilis totam, similique quod possimus.</tr>
+						<!-- <tr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque expedita doloribus reiciendis iusto qui quia quam, harum quos. Necessitatibus dolorem, consectetur mollitia odit recusandae corporis facilis totam, similique quod possimus.</tr> -->
 						<tr>
 							<td class="t_center">122</td>
 							<td>Santiago Morales Gonzalez</td>
@@ -267,8 +278,8 @@
 							<td class="t_center">
 								<a title="Vista rápida" data-toggle="modal" data-target="#Expediente" href="#Expediente" class="btn-floating-default2" ><i class="material-icons" style="vertical-align: middle;color: white;">visibility</i></a>
 								<a data-fancybox href="static/pdf/pdf-test.pdf" class="btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;color: white;">list_alt</i></a>
-								<a title="Editar info" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">edit</i></a>
-								<a title="Borrar" class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;color: white;">delete</i></a>
+								<a title="Certificados" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">school</i></a>
+								
 							</td>
 						</tr>
 						<tr>
@@ -283,17 +294,23 @@
 							<td class="t_center">
 								<a title="Vista rápida" data-toggle="modal" data-target="#Expediente" href="#Expediente" class="btn-floating-default2" ><i class="material-icons" style="vertical-align: middle;color: white;">visibility</i></a>
 								<a data-fancybox href="static/pdf/pdf-test.pdf" class="btn-floating-default" data-toggle="tooltip" data-placement="top" title="Contrato"><i class="material-icons" style="vertical-align: middle;color: white;">list_alt</i></a>
-								<a title="Editar info" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">edit</i></a>
-								<a title="Borrar" class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;color: white;">delete</i></a>
+								<a title="Certificados" class="btn-floating-warning" a href="main.html"><i class="material-icons" style="vertical-align: middle;color: white;">school</i></a>
+								
 							</td>
 						</tr>
 					</tbody>
 				</table>
 
-
-
-
 			</div>
+		</div>
+		<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      		<p>Food </p>
+		</div>
+	</div>
+</div>
+
+
+			
 		</div>
 
 	</div>
