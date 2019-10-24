@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- compatilibdad con webapp iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Grúas Villarreal">
+	<link rel="apple-touch-icon"  href="static/favicon/apple-touch-icon.png">
+
+	<!-- compatilibdad con webapp Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#f5cc20">
+	<meta name="application-name" content="Grúas Villarreal">
+	<link rel="icon" type="image/png" href="static/favicon/android-touch-icon.png">
+
+	<title>ERP Grúas Villarreal</title>
+	<meta name="description" content="Software de Automatización">
+	<meta name="author" description="GV"/>
+
+	<link rel="shortcut icon" type="image/x-icon" href="static/favicon/logo.ico" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="static/styleGv.css">
+
+</head>
+<body>
+
+	
+	<header>
+		<div class="Menu">
+			<div class="row">
+				<div class="col LogoNavBar">
+					<ul class="nav">
+						<li class="nav-item AllMenu">
+							<a id="BtnMenuShow" class="nav-link" href="#"><i class="material-icons">menu</i></a>
+						</li>
+						<li class="Logotipo">
+							<a href="/"><img src="static/images/gruasvillarreal_logo.svg" alt=""></a>
+						</li>
+						<li class="nav-item"><div id="MostrarHr">02:34 PM</div>
+						</li>
+						<li class="nav-item DarkMode">
+							<a class="nav-link" href="#" ><i class="material-icons" data-toggle="tooltip" data-placement="right" data-html="true" title="Modo Oscuro">toggle_off</i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col MenuRight">
+					<ul class="justify-content-end">
+						
+						<!-- avatar -->
+						<li class="nav-item dropdown ListRight Avatar">
+							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<div class="AvatTxt">
+									Luis Espinoza U<span>Director General</span>
+								</div>
+								<div class="Img">
+									<img src="static/images/avatar.jpg" alt=""> 
+								</div> 	
+								
+							</a>
+							<div class="dropdown-menu animated bounceInDown" aria-labelledby="navbarDropdown">
+								<a class="DropA" href="#"><i style="vertical-align: middle;" class="material-icons">account_circle</i> Perfil</a>
+								<a class="DropA" href="config.html"><i style="vertical-align: middle;" class="material-icons">edit</i> Configuración</a>
+								
+								<div class="dropdown-divider"></div>
+								<a class="DropA" href="/"><i style="vertical-align: middle;" class="material-icons">power_settings_new</i> Cerrar Sesión</a>
+							</div>
+						</li>
+						<!-- fin avatar -->
+						
+						<!-- notificaciones -->
+						<li class="dropdown Notification ListRight ">
+							<a id="Notifications" class="nav-link dropdown-toggle Bubble" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<i class="material-icons">message</i>
+								<div class="Notif">
+									<div class="Point"></div>
+									<span>1</span>
+								</div>
+							</a>
+							<div class="dropdown-menu animated bounceInDown" aria-labelledby="Notifications">
+								<ul>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons YellowT">warning</i> GV-198 Alejandro Dguez. se vención su Certificado Médico Riesgos 23/12/2019
+										</a>
+									</li>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons GreenT">done</i> Rodrigo Jones subió bitácora de mantto GR-43  </a>
+									</li>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons RedT">error</i> Llegó al limite la GR-20 en el horometro </a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!-- fin notificaciones -->
+						
+						<!-- fullscreen quitando barra nav -->
+						<li class="nav-item FullScreen ListRight">
+							<a class="toggle-fullscreen" href="javascript:void(0);">
+								<i class="material-icons" data-toggle="tooltip" data-placement="left" data-html="true" title="Tamaño Completo">zoom_out_map</i>
+							</a>
+						</li>
+						<!-- fin fullscreen quitando barra nav -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- 2Sidebars -->
+<div class="AllSideBar SideNav_S animated fadeInLeft">
+	<!-- MiniSideNav -->
+	<div class="MiniSideNav scroller">
+		<ul>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">apps</i>
+					<span> Escritorio</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="users.html">
+					<i class="material-icons">how_to_reg</i>
+					<span> Usuarios</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="warehouse.html">
+					<i class="material-icons">lock</i>
+					<span> Almacen</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="new_enterp.html">
+					<i class="material-icons">business</i>
+					<span> Clientes</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="list_deptos.html" >
+					<i class="material-icons">device_hub</i>
+					<span> Deptos</span>
+				</a>
+			</li>
+			<li class="IconRoot ">
+				<a href="#" class="">
+					<div class="Activ"></div>
+					<i class="material-icons">group</i>
+					<span> CapitalH</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="equipment.html">
+					<i class="material-icons">airport_shuttle</i>
+					<span> Equipos</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">pan_tool</i>
+					<span>&nbsp;&nbsp;&nbsp; QSHE</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">alarm_on</i>
+					<span>Logística</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">build</i>
+					<span>Mantto.</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Fin MiniSideNav -->
+
+	<!-- SideNav -->
+	<div class="SideNav scroller">
+		<ul>
+			<li><a href="main.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevo Ingreso</a></li>
+			<li><a href="list_employes.html"><i style="vertical-align: middle;" class="material-icons">list</i> Lista de empleados</a></li>
+			<!-- <li><a href="#"><i style="vertical-align: middle;" class="material-icons">view_list</i> Listado</a></li> -->
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">fingerprint</i> Contratos</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">attach_money</i> Prestamos</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">pool</i> Vacaciones</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">report_problem</i> Actas Admin</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">local_library</i> Capacitación</a></li>
+			<li><a href="#"><i style="vertical-align: middle;" class="material-icons">touch_app</i> Checador</a></li>
+
+		</ul>
+	</div>
+	<!-- Fin SideNav -->
+</div>
+<!-- Fin 2Sidebars -->
+
+
+<!-- Todo el Escritorio -->
+<div class="AllDashboard animated fadeIn">
+
+	<div class="BreadCs">
+		<h5>Almacen</h5>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Almacen</a></li>
+			<li class="breadcrumb-item"><a href="#">Altas</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Crear alta</li>
+		</ul>
+	</div>
+
+	<!-- Dashboard -->
+	<div class="Dashboard scroller">
+
+		<!-- titulo separador -->
+		<h5 class="TitleInfo">Agregar nuevo producto</h5>
+
+		<div class="row">
+			<div class="col-sm-2 Picture">
+				<label for="">Foto</label>
+				<img src="static/images/avatar.jpg" alt=""><br><br>
+				<div class="Box t_center">		
+					<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1">
+					<label for="input-c-file-imagen" title="Imagen">
+						<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-sm-10">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label for="">Empleado</label>
+							<input class="form-control" type="number" placeholder="2">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<label for="">Proyecto</label>
+						<select class="form-control">
+							<option readonly>Seleccione una opción</option>
+							<option>2 Bocas</option>
+							<option>Ventosa</option>
+							<option>Schlumberguer</option>
+							<option>Local</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="">Departamento/Área</label>
+						<select class="form-control">
+							<option readonly>Operaciones</option>
+							<option>Dirección</option>
+							<option>Jefatura</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<label for="">Encargado del área</label>
+						<select class="form-control">
+							<option readonly>Luis Espinoza</option>
+							<option>Jorge Toledo</option>
+							<option>Cynthia Villarreal</option>
+						</select>
+					</div>
+					
+					<div class="col-sm-4">
+						<label for="">Puesto</label>
+						<select class="form-control">
+							<option readonly>Selecciona una opción</option>
+							<option>Maniobrista</option>
+							<option>Operador de grúa</option>
+							<option>Operador de tracto</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Fecha de Ingreso</label>
+							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de ingreso">
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Fecha Ingreso a Laborar</label>
+							<input data-provide="datepicker" class="form-control" type="date" placeholder="Fecha de ingreso a laborar">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="">Vacante Producida por:</label>
+						<select class="form-control">
+							<option readonly>Selecciona una opción</option>
+							<option>Promoción/Ascenso</option>
+							<option>Incapacidad</option>
+							<option>Maternidad</option>
+							<option>Remplazo</option>
+							<option>Proyecto</option>
+							<option>Renuncia</option>
+							<option>Recomendación</option>
+							<option>Otro</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<label for="">Categoría</label>
+						<select class="form-control">
+							<option readonly value="">Selecciona una opción</option>
+							<option>Base</option>
+							<option>3 Meses</option>
+							<option>Por obra/Proyecto</option>
+						</select>
+					</div>
+					
+				</div> <!-- row -->
+				<div class="row">
+					<div class="col-sm-6"> <br>
+						<div class="form-group">
+							<label for="">Salario</label>
+							<input data-provide="datepicker" class="form-control" type="number" placeholder="Salario del trabajador">
+						</div>
+					</div>
+					<div class="col-sm-6"> <br>
+						<div class="form-group">
+							<label for="">Salario diario integrado</label>
+							<input data-provide="datepicker" class="form-control" type="number" placeholder="Salario diario integrado">
+						</div>
+					</div>
+					<div class="col-sm-12"> 
+						<div class="form-group">
+							<label for="">Funciones y responsabilidades del puesto</label>
+							<textarea name="" class="form-control" type="text" placeholder="Perfil del puesto"></textarea> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- titulo separador -->
+		<div class="col-sm-12">	
+			<h5 class="TitleInfo">Tabla de productos</h5>
+		</div>
+
+		<div class="col-sm-12">	
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="">Subir documento</label><br>
+						<div class="Box t_center">		
+							<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+							<label for="input-c-file-imagen" title="No. de Cuenta Infonavit">
+								<i class="fa fa-upload"></i> <span class="iborrainputfile"> .pdf</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Folio/número</label>
+						<input class="form-control" type="text" placeholder="No. de folio/número">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Documento</label>
+						<input class="form-control" type="text" placeholder="Certificado cédula constancia">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Descripción</label>
+						<input class="form-control" type="text" placeholder="Descripción del docto">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Empresa que emité</label>
+						<input class="form-control" type="text" placeholder="Empresa que emitió">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">Fecha de vencimiento</label>
+						<input class="form-control" type="date" placeholder="Fecha de vencimiento">
+					</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="">&nbsp;</label>
+						<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
+					</div>
+				</div>
+			</div> <!-- row -->
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="MiniDivider"></div>
+
+					<table class="table">
+						<thead>
+							<th>Folio</th>
+							<th>Documento</th>
+							<th>Fecha de Emisión</th>
+							<th>Fecha de Vencimiento</th>
+							<th>Docto.</th>
+							<th>Estatus</th>
+							<th>Acción</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>209238198</td>
+								<td>Acta constitutiva</td>
+								<td>12-10-2019</td>
+								<td>12-10-2020</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>109238128</td>
+								<td>RFC</td>
+								<td>12-10-1995</td>
+								<td>-</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: orange;" data-toggle="tooltip" data-placement="top" title="Está por vencer">report_problem</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>139238198</td>
+								<td>Cédula fiscal</td>
+								<td>12-10-1995</td>
+								<td>-</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: red;" data-toggle="tooltip" data-placement="top" title="Vencido">close</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="AllBtnsAction">
+			<div class="BtnCrear_grey">
+				<button type="submit" class="btn"><i class="material-icons" style="vertical-align: middle;">assignment</i> Generar contrato</button>
+			</div>
+			<div class="BtnCrear">
+				<button id="BtnCrear" type="submit" class="BtnCrear btn"><i class="material-icons" style="vertical-align: middle;">check_circle_outline</i> Crear usuario</button>
+			</div>
+		</div>
+	</div> 
+	<!-- Fin Dashboard -->
+</div>
+<!-- Fin AllDashboard -->
+<!-- Fin Escritorio -->
+
+
+
+
+
+
+
+	<script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+	<script type="text/javascript" src="static/js/main.js"></script>
+
+</body>
+</html>

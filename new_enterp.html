@@ -140,6 +140,12 @@
 				</a>
 			</li>
 			<li class="IconRoot">
+				<a href="warehouse.html">
+					<i class="material-icons">lock</i>
+					<span> Almacen</span>
+				</a>
+			</li>
+			<li class="IconRoot">
 				<a href="new_enterp.html">
 					<i class="material-icons">business</i>
 					<span> Clientes</span>
@@ -593,6 +599,153 @@
 			</div>
 		</div>
 	</div>
+
+		<!-- titulo separador -->
+		<div class="col-sm-12">	
+			<h5 class="TitleInfo">Información Financiera</h5>
+		</div>
+
+		<div class="col-sm-12">	
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">No. de cuenta</label>
+						<input class="form-control" type="text" placeholder="No. de cuenta">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Apto para credito</label>
+						<select class="form-control">
+							<option readonly>Selecciona una opción</option>
+							<option>Si</option>
+							<option>No</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Limite Credito</label>
+						<input class="form-control" type="number" min="1" step="any" placeholder="$100,000">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Tipo de pago</label>
+						<select class="form-control">
+							<option readonly>Selecciona una opción</option>
+							<option>Transferencia</option>
+							<option>Cheque</option>
+							<option>Efectivo</option>
+							<option>Tarjeta de Credito</option>
+							<option>Tarjeta de Debito</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Plazos por pagar</label>
+						<input class="form-control" type="number" placeholder="Numero de plazos">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Fecha de ingreso de pago</label>
+						<input class="form-control" type="text" placeholder="Fecha ingreso de pago">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">Fecha de pago</label>
+						<input class="form-control" type="text" placeholder="Fecha programada de pago">
+					</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="form-group">
+							<label for="">Estado de cuenta</label>
+							<input class="form-control" type="text" placeholder="Numero de Folio">
+
+							<div class="Box t_center">		
+								<input type="file" id="input-c-file-imagen" class="inputfile inputfile-1" >
+								<label for="input-c-file-imagen" title="Acta nacimiento">
+									<i class="fa fa-upload"></i> <span class="iborrainputfile"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="">&nbsp;</label>
+						<button class="btn btn-gv" style="width: 100%;"><i class="fa fa-plus" style="vertical-align: middle;"></i> Agregar</button>
+					</div>
+				</div>
+			</div> <!-- row -->
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="MiniDivider"></div>
+
+					<table class="table">
+						<thead>
+							<th>Folio</th>
+							<th>Estado de Cuenta</th>
+							<th>Fecha de Subida</th>
+							<th>Docto.</th>
+							<th>Estatus</th>
+							<th>Acción</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>209238198</td>
+								<td>Factura del 10/10/2019</td>
+								<td>12-10-2019</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: green;" data-toggle="tooltip" data-placement="top" title="Vigente">done</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>109238128</td>
+								<td>Factura del 11/10/2019</td>
+								<td>12-10-1995</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: orange;" data-toggle="tooltip" data-placement="top" title="Está por vencer">report_problem</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+							<tr>
+								<td>139238198</td>
+								<td>Factura del 12/10/2019</td>
+								<td>12-10-1995</td>
+								<td class="t_center">
+									<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+								</td>
+								<td class="t_center">
+									<i class="material-icons" style="vertical-align: middle;color: red;" data-toggle="tooltip" data-placement="top" title="Vencido">close</i>
+								</td>
+								<td class="t_center">
+									<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+
 
 		
 		<div class="AllBtnsAction">
