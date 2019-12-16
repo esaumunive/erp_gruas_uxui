@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- compatilibdad con webapp iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Grúas Villarreal">
+	<link rel="apple-touch-icon"  href="static/favicon/apple-touch-icon.png">
+
+	<!-- compatilibdad con webapp Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#f5cc20">
+	<meta name="application-name" content="Grúas Villarreal">
+	<link rel="icon" type="image/png" href="static/favicon/android-touch-icon.png">
+
+	<title>ERP Grúas Villarreal</title>
+	<meta name="description" content="Software de Automatización">
+	<meta name="author" description="GV"/>
+
+	<link rel="shortcut icon" type="image/x-icon" href="static/favicon/logo.ico" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="static/styleGv.css">
+
+</head>
+<body>
+
+	
+	<header>
+		<div class="Menu">
+			<div class="row">
+				<div class="col LogoNavBar">
+					<ul class="nav">
+						<li class="nav-item AllMenu">
+							<a id="BtnMenuShow" class="nav-link" href="#"><i class="material-icons">menu</i></a>
+						</li>
+						<li class="Logotipo">
+							<a href="/"><img src="static/images/gruasvillarreal_logo.svg" alt=""></a>
+						</li>
+						<li class="nav-item"><div id="MostrarHr">02:34 PM</div>
+						</li>
+						<li class="nav-item DarkMode">
+							<a class="nav-link" href="#" ><i class="material-icons" data-toggle="tooltip" data-placement="right" data-html="true" title="Modo Oscuro">toggle_off</i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col MenuRight">
+					<ul class="justify-content-end">
+						
+						<!-- avatar -->
+						<li class="nav-item dropdown ListRight Avatar">
+							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<div class="AvatTxt">
+									Luis Espinoza U<span>Director General</span>
+								</div>
+								<div class="Img">
+									<img src="static/images/avatar.jpg" alt=""> 
+								</div> 	
+								
+							</a>
+							<div class="dropdown-menu animated bounceInDown" aria-labelledby="navbarDropdown">
+								<a class="DropA" href="#"><i style="vertical-align: middle;" class="material-icons">account_circle</i> Perfil</a>
+								<a class="DropA" href="config.html"><i style="vertical-align: middle;" class="material-icons">edit</i> Configuración</a>
+								
+								<div class="dropdown-divider"></div>
+								<a class="DropA" href="/"><i style="vertical-align: middle;" class="material-icons">power_settings_new</i> Cerrar Sesión</a>
+							</div>
+						</li>
+						<!-- fin avatar -->
+						
+						<!-- notificaciones -->
+						<li class="dropdown Notification ListRight ">
+							<a id="Notifications" class="nav-link dropdown-toggle Bubble" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+								<i class="material-icons">message</i>
+								<div class="Notif">
+									<div class="Point"></div>
+									<span>1</span>
+								</div>
+							</a>
+							<div class="dropdown-menu animated bounceInDown" aria-labelledby="Notifications">
+								<ul>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons YellowT">warning</i> GV-198 Alejandro Dguez. se vención su Certificado Médico Riesgos 23/12/2019
+										</a>
+									</li>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons GreenT">done</i> Rodrigo Jones subió bitácora de mantto GR-43  </a>
+									</li>
+									<li>
+										<a href="#"><i style="vertical-align: middle;" class="material-icons RedT">error</i> Llegó al limite la GR-20 en el horometro </a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!-- fin notificaciones -->
+						
+						<!-- fullscreen quitando barra nav -->
+						<li class="nav-item FullScreen ListRight">
+							<a class="toggle-fullscreen" href="javascript:void(0);">
+								<i class="material-icons" data-toggle="tooltip" data-placement="left" data-html="true" title="Tamaño Completo">zoom_out_map</i>
+							</a>
+						</li>
+						<!-- fin fullscreen quitando barra nav -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- 2Sidebars -->
+<div class="AllSideBar SideNav_S animated fadeInLeft">
+	<!-- MiniSideNav -->
+	<div class="MiniSideNav scroller">
+		<ul>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">apps</i>
+					<span> Escritorio</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="users.html">
+					<i class="material-icons">how_to_reg</i>
+					<span> Usuarios</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="warehouse.html">
+					<i class="material-icons">lock</i>
+					<span> Almacen</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="new_enterp.html">
+					<i class="material-icons">business</i>
+					<span> Empresas</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#" >
+					<i class="material-icons">device_hub</i>
+					<span> Deptos</span>
+				</a>
+			</li>
+			<li class="IconRoot ">
+				<a href="main.html" class="">
+					<div class="Activ"></div>
+					<i class="material-icons">group</i>
+					<span> CapitalH</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+
+					<i class="material-icons">airport_shuttle</i>
+					<span> Equipos</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">pan_tool</i>
+					<span>&nbsp;&nbsp;&nbsp; QSHE</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">alarm_on</i>
+					<span>Logística</span>
+				</a>
+			</li>
+			<li class="IconRoot">
+				<a href="#">
+					<i class="material-icons">build</i>
+					<span>Mantto.</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Fin MiniSideNav -->
+
+	<!-- SideNav -->
+	<div class="SideNav scroller">
+		<ul>
+			<li><a href="users.html"><i style="vertical-align: middle;" class="material-icons">assignment_turned_in</i> Nuevos</a></li>
+			
+			<li><a href="list_users.html"><i style="vertical-align: middle;" class="material-icons">view_list</i> Listado</a></li> 
+
+		</ul>
+	</div>
+	<!-- Fin SideNav -->
+</div>
+<!-- Fin 2Sidebars -->
+
+
+<!-- Todo el Escritorio -->
+<div class="AllDashboard animated fadeIn">
+
+	<div class="BreadCs">
+		<h5>Lista de Equipos</h5>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="main.html">Escritorio</a></li>
+			<li class="breadcrumb-item"><a href="index.html">Equipos</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Listado</li>
+		</ul>
+	</div>
+
+	<!-- Dashboard -->
+	<div class="Dashboard scroller">
+		
+
+		<div class="row">
+			<div class="col-sm-2">
+				<a href="equipment.html" class="btn btn-gv"><i class="material-icons" style="vertical-align: middle;">add</i> Crear equipo</a>
+			</div>
+			<div class="col-sm-8">
+				<form class="form-inline">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar usuario" aria-label="Search">
+				</form>
+			</div> <br>
+			<div class="col-sm-12"><br>
+				<table class="table">
+					<thead>
+						<th>ID</th>
+						<th>Nombre</th>
+						<th>No Economico</th>
+						<th>Tipo</th>
+						<th>Placas</th>
+						<th>Ubicación</th>
+						<th>Docto.</th>
+						<th>Acción</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>209238198</td>
+							<td>Renault 355</td>
+							<td>AA-12345</td>
+							<td>Titan</td>
+							<td>AA-100-A</td>
+							<td>Dos Bocas</td>
+							<td class="t_center">
+								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+							</td>
+							<td class="t_center">
+								<a href="equipment_2.html" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">check_box</i></a>
+								<a data-fancybox href="static/images/qr.png" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">code</i></a>
+								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>109238128</td>
+							<td>Renault 357</td>
+							<td>AA-12345</td>
+							<td>Movil</td>
+							<td>AA-100-A</td>
+							<td>Dos Boocas</td>
+							<td class="t_center">
+								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+							</td>
+							<td class="t_center">
+								<a href="equipment_2.html" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">check_box</i></a>
+								<a data-fancybox href="static/images/qr.png" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">code</i></a>
+								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>139238198</td>
+							<td>Renault 363</td>
+							<td>AA-12345</td>
+							<td>Tractocamion</td>
+							<td>AA-100-A</td>
+							<td>Ventosa</td>
+							<td class="t_center">
+								<a data-fancybox href="static/pdf/pdf-test.pdf"><i class="material-icons" style="vertical-align: middle;">wallpaper</i></a>
+							</td>
+							<td class="t_center">
+								<a href="equipment_2.html" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">check_box</i></a>
+								<a data-fancybox href="static/images/qr.png" class="btn-floating-error"><i class="material-icons" style="vertical-align: middle;">code</i></a>
+								<button class="BorrarBtn btn-floating-error"><i class="material-icons" style="vertical-align: middle;">delete</i></button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- pagination -->
+	<nav aria-label="..." class="PageGroup">
+		<ul class="pagination justify-content-center">
+			<li class="page-item active" aria-current="page">
+				<span class="page-link"> 1
+        			<span class="sr-only">(current)</span>
+				</span>
+			</li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+		</ul>
+	</nav>
+
+
+</div>
+<!-- Fin AllDashboard -->
+<!-- Fin Escritorio -->
+
+
+
+
+
+
+
+	<script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+	<script type="text/javascript" src="static/js/main.js"></script>
+
+</body>
+</html>
